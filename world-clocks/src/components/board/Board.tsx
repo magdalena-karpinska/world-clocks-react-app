@@ -19,18 +19,18 @@ export function Board() {
   });
 
   const tokyoTime = new Date().toLocaleTimeString("pl-PL", {
-    timeZone: "Europe/Stockholm",
+    timeZone: "Asia/Tokyo",
   });
 
   const newYorkTime = new Date().toLocaleTimeString("pl-PL", {
-    timeZone: "Europe/Stockholm",
+    timeZone: "America/New_York",
   });
 
   const losAngelesTime = new Date().toLocaleTimeString("pl-PL", {
-    timeZone: "Europe/Stockholm",
+    timeZone: "America/Los_Angeles",
   });
   const saoPauloTime = new Date().toLocaleTimeString("pl-PL", {
-    timeZone: "Europe/Stockholm",
+    timeZone: "America/Sao_Paulo",
   });
 
   return (
