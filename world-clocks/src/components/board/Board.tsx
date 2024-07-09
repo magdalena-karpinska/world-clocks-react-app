@@ -1,10 +1,12 @@
 import "./Board.css";
 import { Clock } from "../Clock";
+import { useState } from "react";
 
 export function Board() {
   const stockholmTime = new Date().toLocaleTimeString("pl-PL", {
     timeZone: "Europe/Stockholm",
   });
+  const [time, setTime] = useState(stockholmTime);
 
   const londonTime = new Date().toLocaleTimeString("pl-PL", {
     timeZone: "Europe/London",
@@ -29,6 +31,7 @@ export function Board() {
   const losAngelesTime = new Date().toLocaleTimeString("pl-PL", {
     timeZone: "America/Los_Angeles",
   });
+
   const saoPauloTime = new Date().toLocaleTimeString("pl-PL", {
     timeZone: "America/Sao_Paulo",
   });
